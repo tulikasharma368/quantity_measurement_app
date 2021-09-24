@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/design.css">
+</head>
+<body>
+    <h3 class="head">Quanment</h3>
+    <header class="header-content">Welcome To Quantity Measurement</header>
+    <div class="main-container">
+        <div class="main-items">
+            <div class="choose">
+                <p>CHOOSE TYPE</p>
+            </div><!-- choose type -->
+            <div class="images">
+                <div class="image hover-green" onclick="length()">
+                    <img class="length" src="/assets/length_gray.svg" alt="">
+                    <p class="quantity">Length</p>
+                </div><!-- image -->
+                <div class="image hover-red" onclick="temperature()">
+                    <img class="temperature" src="/assets/temp_gray.svg" alt="">
+                    <p class="quantity">Temperature</p>
+                </div><!-- image -->
+                <div class="image hover-purple" onclick="volume()">
+                    <img class="volume" src="/assets/vol_gray.svg" alt="">
+                    <p class="quantity">Volume</p>
+                </div><!-- image -->
+            </div>
+        </div><!-- all images -->
+        <div class="convert-items">
+            <div class="from">
+                <form>
+                    <p class="p">from</p>
+                    <input type="number" placeholder="input">
+                    <select name="len-value1" id="len-value1">
+                        <option value="kilometre">Kilometre</option>
+                        <option value="metres">Metres</option>
+                        <option value="centimetre">Centimetres</option>
+                        <option value="milimetre">Milimetre</option>
+                        <option value="micrometre">Micrometre</option>
+                        <option value="mile">Mile</option>
+                        <option value="foot">Foot</option>
+                        <option value="inch">Inch</option>
+                    </select>
+                </form>
+            </div><!-- from value-->
+            <div class="to">
+                <form>
+                    <p class="p">to</p>
+                    <input type="number" placeholder="ouput">
+                    <select name="len-value2" id="len-value2">
+                        <option value="kilometre">Kilometre</option>
+                        <option value="metres">Metres</option>
+                        <option value="centimetre">Centimetres</option>
+                        <option value="milimetre">Milimetre</option>
+                        <option value="micrometre">Micrometre</option>
+                        <option value="mile">Mile</option>
+                        <option value="foot">Foot</option>
+                        <option value="inch">Inch</option>
+                    </select>
+                </form>
+            </div><!-- to value -->
+            
+        </div><!--(convert items) from-to, value and dropdown -->
+        
+    </div><!-- everything below header(Main div) -->
+    <script src="/js/html.js"></script>
+</body>
+</html>
