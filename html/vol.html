@@ -34,10 +34,10 @@
             <div class="from">
                 <form>
                     <p class="p">from</p>
-                    <input type="number" placeholder="input">
-                    <select name="vol-value1" id="vol-value1">
+                    <input id="value1" type="number" value="1" oninput="convertVol()">
+                    <select id="selectFrom" name="vol-value1" onchange="convertVol()">
                         <option value="litre">Litre</option>
-                        <option value="millimetre">Millimeter</option>
+                        <option value="millileter">Millileter</option>
                         <option value="gallon">Gallon</option>
                     </select>
                 </form>
@@ -45,10 +45,10 @@
             <div class="to">
                 <form>
                     <p class="p">to</p>
-                    <input type="number" placeholder="ouput">
-                    <select name="vol-value2" id="vol-value2">
+                    <input id="value2" type="number" value="1">
+                    <select id="selectTo" name="vol-value2" onchange="convertVol()">
                     <option value="litre">Litre</option>
-                    <option value="millimetre">Millimeter</option>
+                    <option value="millileter">Millileter</option>
                     <option value="gallon">Gallon</option>
                     </select>
                 </form>
@@ -57,6 +57,6 @@
         </div><!--(convert items) from-to, value and dropdown -->
         
     </div><!-- everything below header(Main div) -->
-
+    <script src="/js/vol_functionality.js"></script>
 </body>
 </html>

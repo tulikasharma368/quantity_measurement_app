@@ -34,8 +34,8 @@
             <div class="from">
                 <form>
                     <p class="p">from</p>
-                    <input type="number" placeholder="1"><br>
-                    <select name="len-value1" id="len-value1">
+                    <input id="value1" type="number" value="1" oninput="convertLen()"><br>
+                    <select id="selectFrom" name="len-value1" onchange="convertLen()">
                         <option value="kilometre">Kilometre</option>
                         <option value="metres">Metres</option>
                         <option value="centimetre">Centimetres</option>
@@ -50,8 +50,8 @@
             <div class="to">
                 <form>
                     <p class="p">to</p>
-                    <input type="number" placeholder="1000">
-                    <select name="len-value2" id="len-value2">
+                    <input id="value2" type="number" value="1" >
+                    <select id="selectTo" name="len-value2" onchange="convertLen()">
                         <option value="kilometre">Kilometre</option>
                         <option value="metres">Metres</option>
                         <option value="centimetre">Centimetres</option>
@@ -67,5 +67,6 @@
         </div><!--(convert items) from-to, value and dropdown -->
         
     </div><!-- everything below header(Main div) -->
+    <script src="/js/len_functionality.js"></script>
 </body>
 </html>
