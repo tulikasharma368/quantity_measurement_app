@@ -177,6 +177,7 @@ img{
     display: flex;
     /* background-color: lightblue; */
     width: 100%;
+    margin-left: -25px;
 }
 
 .p{

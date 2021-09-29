@@ -45,8 +45,8 @@
             <div class="to">
                 <form>
                     <p class="p">to</p>
-                    <input id="value2" type="number" value="1">
-                    <select id="selectTo" name="temp-value2" onchange="convertTemp()">
+                    <input id="value2" type="number" value="1" oninput="convertTempBack()">
+                    <select id="selectTo" name="temp-value2" onchange="convertTempBack()">
                     <option value="celcius">Celcius</option>
                     <option value="fahrenheit">Fahrenheit</option>
                     <option value="kelvin">Kelvin</option>

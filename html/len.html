@@ -50,8 +50,8 @@
             <div class="to">
                 <form>
                     <p class="p">to</p>
-                    <input id="value2" type="number" value="1" >
-                    <select id="selectTo" name="len-value2" onchange="convertLen()">
+                    <input id="value2" type="number" value="1" oninput="convertLenBack()">
+                    <select id="selectTo" name="len-value2" onchange="convertLenBack()">
                         <option value="kilometre">Kilometre</option>
                         <option value="metres">Metres</option>
                         <option value="centimetre">Centimetres</option>

@@ -45,8 +45,8 @@
             <div class="to">
                 <form>
                     <p class="p">to</p>
-                    <input id="value2" type="number" value="1">
-                    <select id="selectTo" name="vol-value2" onchange="convertVol()">
+                    <input id="value2" type="number" value="1" oninput="convertVolBack()">
+                    <select id="selectTo" name="vol-value2" onchange="convertVolBack()">
                     <option value="litre">Litre</option>
                     <option value="millileter">Millileter</option>
                     <option value="gallon">Gallon</option>
